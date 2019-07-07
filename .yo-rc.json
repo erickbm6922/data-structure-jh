@@ -1,0 +1,43 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "gitCompany": "",
+    "baseName": "dataStructureWeb",
+    "packageName": "ds.borda.jh.app",
+    "packageFolder": "ds/borda/jh/app",
+    "serverPort": 8080,
+    "serviceDiscoveryType": false,
+    "authenticationType": "jwt",
+    "uaaBaseName": "../uaa",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Memory",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "enableSwaggerCodegen": "true",
+    "messageBroker": false,
+    "buildTool": "maven",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": [
+      "es",
+      "en"
+    ],
+    "clientFramework": "angularX",
+    "jhiPrefix": "jhi",
+    "jhipsterVersion": "6.1.2",
+    "jwtSecretKey": "YzkwY2IyMTA1MjZhMjQwZThlNjVmNzc0ZmNiMWUzYTY0YTAzZTkyN2Q0YjVmZGVhNTM5NTFiYjY5MjA5MzU5N2Q0Nzk0YTA4Zjc3ZWM0YjMwN2U1NmY5ODQ0N2M3ODNkMTAyZmI2ZTU5MDUzNjcwYzQ0ZmUzYThlNzYwMWNmZTQ=",
+    "clientTheme": "none",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": []
+  },
+  "git-provider": "GitHub",
+  "git-company": "erickbm6922",
+  "repository-name": "data-structure-jh"
+}
