@@ -1,0 +1,35 @@
+{
+    "name": "Venta",
+    "fields": [
+        {
+            "fieldName": "folio",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "fecha",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "subtotal",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "impuesto",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "total",
+            "fieldType": "BigDecimal"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20190708014322",
+    "entityTableName": "venta",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

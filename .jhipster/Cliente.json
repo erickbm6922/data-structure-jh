@@ -1,0 +1,32 @@
+{
+    "name": "Cliente",
+    "fields": [
+        {
+            "fieldName": "razonSocial",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "correo",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "venta",
+            "otherEntityRelationshipName": "cliente",
+            "relationshipName": "venta",
+            "otherEntityField": "id",
+            "ownerSide": true
+        }
+    ],
+    "changelogDate": "20190708014321",
+    "entityTableName": "cliente",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

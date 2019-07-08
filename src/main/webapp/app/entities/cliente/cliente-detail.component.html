@@ -1,0 +1,37 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="cliente">
+            <h2><span jhiTranslate="dataStructureWebApp.cliente.detail.title">Cliente</span> {{cliente.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="dataStructureWebApp.cliente.razonSocial">Razon Social</span></dt>
+                <dd>
+                    <span>{{cliente.razonSocial}}</span>
+                </dd>
+                <dt><span jhiTranslate="dataStructureWebApp.cliente.correo">Correo</span></dt>
+                <dd>
+                    <span>{{cliente.correo}}</span>
+                </dd>
+                <dt><span jhiTranslate="dataStructureWebApp.cliente.venta">Venta</span></dt>
+                <dd>
+                    <span *ngFor="let venta of cliente.ventas; let last = last">
+                        <a [routerLink]="['/venta', venta?.id, 'view' ]">{{venta.id}}</a>{{last ? '' : ', '}}
+                    </span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/cliente', cliente.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

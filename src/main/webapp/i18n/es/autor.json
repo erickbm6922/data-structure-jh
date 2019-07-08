@@ -1,0 +1,24 @@
+{
+  "dataStructureWebApp": {
+    "autor": {
+      "home": {
+        "title": "Autors",
+        "createLabel": "Crear nuevo Autor",
+        "createOrEditLabel": "Crear o editar Autor",
+        "notFound": "No Autor found"
+      },
+      "created": "Un nuevo Autor ha sido creado con el identificador {{ param }}",
+      "updated": "Un Autor ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Autor ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Autor {{ id }}?"
+      },
+      "detail": {
+        "title": "Autor"
+      },
+      "nombre": "Nombre",
+      "correo": "Correo",
+      "libro": "Libro"
+    }
+  }
+}
