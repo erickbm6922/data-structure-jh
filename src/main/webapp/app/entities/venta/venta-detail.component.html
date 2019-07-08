@@ -1,0 +1,43 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="venta">
+            <h2><span jhiTranslate="dataStructureWebApp.venta.detail.title">Venta</span> {{venta.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="dataStructureWebApp.venta.folio">Folio</span></dt>
+                <dd>
+                    <span>{{venta.folio}}</span>
+                </dd>
+                <dt><span jhiTranslate="dataStructureWebApp.venta.fecha">Fecha</span></dt>
+                <dd>
+                    <span>{{venta.fecha}}</span>
+                </dd>
+                <dt><span jhiTranslate="dataStructureWebApp.venta.subtotal">Subtotal</span></dt>
+                <dd>
+                    <span>{{venta.subtotal}}</span>
+                </dd>
+                <dt><span jhiTranslate="dataStructureWebApp.venta.impuesto">Impuesto</span></dt>
+                <dd>
+                    <span>{{venta.impuesto}}</span>
+                </dd>
+                <dt><span jhiTranslate="dataStructureWebApp.venta.total">Total</span></dt>
+                <dd>
+                    <span>{{venta.total}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/venta', venta.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

@@ -43,6 +43,12 @@ public class CacheConfiguration {
             createCache(cm, ds.borda.jh.app.domain.User.class.getName());
             createCache(cm, ds.borda.jh.app.domain.Authority.class.getName());
             createCache(cm, ds.borda.jh.app.domain.User.class.getName() + ".authorities");
+            createCache(cm, ds.borda.jh.app.domain.Autor.class.getName());
+            createCache(cm, ds.borda.jh.app.domain.Autor.class.getName() + ".libros");
+            createCache(cm, ds.borda.jh.app.domain.Libro.class.getName());
+            createCache(cm, ds.borda.jh.app.domain.Cliente.class.getName());
+            createCache(cm, ds.borda.jh.app.domain.Cliente.class.getName() + ".ventas");
+            createCache(cm, ds.borda.jh.app.domain.Venta.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

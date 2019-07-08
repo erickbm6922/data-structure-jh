@@ -1,0 +1,37 @@
+entity Autor {
+	nombre String,
+    correo String
+}
+entity Libro {
+	titulo String,
+    descripcion String,
+    precio BigDecimal
+}
+entity Cliente {
+	razonSocial String,
+    correo String
+}
+entity Venta {
+	folio String,
+    fecha LocalDate,
+    subtotal BigDecimal,
+    impuesto BigDecimal,
+    total BigDecimal
+}
+
+relationship ManyToMany {
+	Autor{libro} to Libro,
+    Cliente{venta} to Venta
+}
+
+// Set pagination options
+paginate Autor, Libro, Cliente, Venta with pagination
+
+// Use Data Transfert Objects (DTO)
+dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
